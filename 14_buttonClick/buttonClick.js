@@ -3,8 +3,9 @@ const buttonClick = function () {};
 const btn = document.querySelector("#btn");
 btn.onclick = () => alert(`This is method 2`);
 
-const method2 = document.querySelector("#method2");
-method2.addEventListener("click", () => {
+const method3 = document.querySelector("#method3");
+method3.addEventListener("click", function (e) {
+  console.log(e);
   alert(`This is method 3`);
 });
 
