@@ -5,7 +5,8 @@ btn.onclick = () => alert(`This is method 2`);
 
 const method3 = document.querySelector("#method3");
 method3.addEventListener("click", function (e) {
-  console.log(e);
+  console.log(e.target);
+  e.target.style.background = "blue";
   alert(`This is method 3`);
 });
 
